@@ -9,12 +9,15 @@ function check() {
     if ($(winConditions[i][0]).hasClass('red') && $(winConditions[i][1]).hasClass('red') && $(winConditions[i][2]).hasClass('red')) {
       alert("Kurt Wins");
       $('.board div').removeClass('avail')
+      return
     } else if ($(winConditions[i][0]).hasClass('blue') && $(winConditions[i][1]).hasClass('blue') && $(winConditions[i][2]).hasClass('blue')) {
         alert("Kermit Wins");
         $('.board div').removeClass('avail')
-    } else if (($('.red').length + $('.blue').length) === 9) {
-      alert("Tie Game!");
+        return
     }
+  }
+  if (($('.red').length + $('.blue').length) === 9) {
+    alert("Tie Game!");
   }
 }
 
