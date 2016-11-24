@@ -10,10 +10,10 @@ function check() {
       alert("Kurt Wins");
       $('.board div').removeClass('avail')
       return
-    } else if ($(winConditions[i][0]).hasClass('blue') && $(winConditions[i][1]).hasClass('blue') && $(winConditions[i][2]).hasClass('blue')) {
-        alert("Kermit Wins");
-        $('.board div').removeClass('avail')
-        return
+  } else if ($(winConditions[i][0]).hasClass('blue') && $(winConditions[i][1]).hasClass('blue') && $(winConditions[i][2]).hasClass('blue')) {
+      alert("Kermit Wins");
+      $('.board div').removeClass('avail')
+      return
     }
   }
   if (($('.red').length + $('.blue').length) === 9) {
