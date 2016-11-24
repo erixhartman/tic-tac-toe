@@ -7,17 +7,17 @@ var winConditions = [['#one', '#two', '#three'], ['#four', '#five', '#six'], ['#
 function check() {
   for (var i = 0; i < winConditions.length; i++) {
     if ($(winConditions[i][0]).hasClass('red') && $(winConditions[i][1]).hasClass('red') && $(winConditions[i][2]).hasClass('red')) {
-      alert("Kurt Wins");
+      setTimeout(function(){alert("Kurt Wins!"); }, 100);
       $('.board div').removeClass('avail')
       return
   } else if ($(winConditions[i][0]).hasClass('blue') && $(winConditions[i][1]).hasClass('blue') && $(winConditions[i][2]).hasClass('blue')) {
-      alert("Kermit Wins");
+      setTimeout(function(){alert("Kermit Wins!"); }, 100);
       $('.board div').removeClass('avail')
       return
     }
   }
   if (($('.red').length + $('.blue').length) === 9) {
-    alert("Tie Game!");
+    setTimeout(function(){alert("Tie Game!"); }, 100);
   }
 }
 
