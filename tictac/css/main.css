@@ -12,12 +12,9 @@
   float: left;
   height: 90px;
   width: 90px;
-  border-right-style: solid;
-  border-right-width: 5px;
-  border-right-color: black;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  border-bottom-color: black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+
 }
 
 #two {
@@ -26,9 +23,7 @@
   display: inline;
   height: 90px;
   width: 90px;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  border-bottom-color: black;
+  border-bottom: 5px solid black;
 }
 
 #three {
@@ -37,12 +32,8 @@
   display: inline;
   height: 90px;
   width: 90px;
-  border-left-style: solid;
-  border-left-width: 5px;
-  border-left-color: black;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  border-bottom-color: black;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
 }
 
 #four {
@@ -51,13 +42,8 @@
   display: inline;
   height: 90px;
   width: 90px;
-  border-right-style: solid;
-  border-right-width: 5px;
-  border-right-color: black;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  border-bottom-color: black;
-
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
 }
 
 #five {
@@ -66,11 +52,7 @@
   display: inline;
   height: 90px;
   width: 90px;
-
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  border-bottom-color: black;
-
+  border-bottom: 5px solid black;
 }
 
 #six {
@@ -79,13 +61,8 @@
   display: inline;
   height: 90px;
   width: 90px;
-  border-left-style: solid;
-  border-left-width: 5px;
-  border-left-color: black;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  border-bottom-color: black;
-
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
 }
 
 #seven {
@@ -94,9 +71,7 @@
   display: inline;
   height: 90px;
   width: 90px;
-  border-right-style: solid;
-  border-right-width: 5px;
-  border-right-color: black;
+  border-right: 5px solid black;
 }
 
 #eight {
@@ -113,9 +88,7 @@
   display: inline;
   height: 90px;
   width: 90px;
-  border-left-style: solid;
-  border-left-width: 5px;
-  border-left-color: black;
+  border-left: 5px solid black;
 }
 
 .red {
