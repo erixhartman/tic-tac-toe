@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .board {
   top: 200px;
   margin: auto;
@@ -10,8 +14,8 @@
   position: relative;
   display: inline;
   float: left;
-  height: 90px;
-  width: 90px;
+  height: 33.3333333%;
+  width:  33.3333333%;
   border-right: 5px solid black;
   border-bottom: 5px solid black;
 
@@ -21,8 +25,8 @@
   float: left;
   position: relative;
   display: inline;
-  height: 90px;
-  width: 90px;
+  height: 33.3333333%;
+  width:  33.3333333%;
   border-bottom: 5px solid black;
 }
 
@@ -30,8 +34,8 @@
   float: left;
   position: relative;
   display: inline;
-  height: 90px;
-  width: 90px;
+  height: 33.3333333%;
+  width:  33.3333333%;
   border-left: 5px solid black;
   border-bottom: 5px solid black;
 }
@@ -40,8 +44,8 @@
   float: left;
   position: relative;
   display: inline;
-  height: 90px;
-  width: 90px;
+  height: 33.3333333%;
+  width:  33.3333333%;
   border-right: 5px solid black;
   border-bottom: 5px solid black;
 }
@@ -50,8 +54,8 @@
   float: left;
   position: relative;
   display: inline;
-  height: 90px;
-  width: 90px;
+  height: 33.3333333%;
+  width:  33.3333333%;
   border-bottom: 5px solid black;
 }
 
@@ -59,8 +63,8 @@
   float: left;
   position: relative;
   display: inline;
-  height: 90px;
-  width: 90px;
+  height: 33.3333333%;
+  width:  33.3333333%;
   border-left: 5px solid black;
   border-bottom: 5px solid black;
 }
@@ -69,8 +73,8 @@
   float: left;
   position: relative;
   display: inline;
-  height: 90px;
-  width: 90px;
+  height: 33.3333333%;
+  width:  33.3333333%;
   border-right: 5px solid black;
 }
 
@@ -78,16 +82,16 @@
   float: left;
   position: relative;
   display: inline;
-  height: 90px;
-  width: 90px;
+  height: 33.3333333%;
+  width:  33.3333333%;
   }
 
 #nine {
   float: left;
   position: relative;
   display: inline;
-  height: 90px;
-  width: 90px;
+  height: 33.3333333%;
+  width:  33.3333333%;
   border-left: 5px solid black;
 }
 
