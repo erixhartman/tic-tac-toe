@@ -1,0 +1,127 @@
+.board {
+  top: 200px;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+
+#one {
+  position: relative;
+  display: inline;
+  float: left;
+  height: 90px;
+  width: 90px;
+  border-right-style: solid;
+  border-right-width: 5px;
+  border-right-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: black;
+}
+
+#two {
+  float: left;
+  position: relative;
+  display: inline;
+  height: 90px;
+  width: 90px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: black;
+}
+
+#three {
+  float: left;
+  position: relative;
+  display: inline;
+  height: 90px;
+  width: 90px;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-left-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: black;
+}
+
+#four {
+  float: left;
+  position: relative;
+  display: inline;
+  height: 90px;
+  width: 90px;
+  border-right-style: solid;
+  border-right-width: 5px;
+  border-right-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: black;
+
+}
+
+#five {
+  float: left;
+  position: relative;
+  display: inline;
+  height: 90px;
+  width: 90px;
+
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: black;
+
+}
+
+#six {
+  float: left;
+  position: relative;
+  display: inline;
+  height: 90px;
+  width: 90px;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-left-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: black;
+
+}
+
+#seven {
+  float: left;
+  position: relative;
+  display: inline;
+  height: 90px;
+  width: 90px;
+  border-right-style: solid;
+  border-right-width: 5px;
+  border-right-color: black;
+}
+
+#eight {
+  float: left;
+  position: relative;
+  display: inline;
+  height: 90px;
+  width: 90px;
+  }
+
+#nine {
+  float: left;
+  position: relative;
+  display: inline;
+  height: 90px;
+  width: 90px;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-left-color: black;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
