@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+.tile{
+    position: relative;
+    display: inline;
+    float: left;
+    background-size: 100%;
+    height: 33.3333333%;
+    width:  33.3333333%;
+}
+
 .board {
   top: 200px;
   margin: auto;
@@ -11,98 +20,17 @@
   overflow: auto;
 }
 
-#one {
-  position: relative;
-  display: inline;
-  float: left;
-  background-size: 100%;
-  height: 33.3333333%;
-  width:  33.3333333%;
-  border-right: 5px solid black;
-  border-bottom: 5px solid black;
-
-}
-
-#two {
-  float: left;
-  position: relative;
-  display: inline;
-  background-size: 100%;
-  height: 33.3333333%;
-  width:  33.3333333%;
-  border-bottom: 5px solid black;
-}
-
-#three {
-  float: left;
-  position: relative;
-  display: inline;
-  background-size: 100%;
-  height: 33.3333333%;
-  width:  33.3333333%;
-  border-left: 5px solid black;
-  border-bottom: 5px solid black;
-}
-
-#four {
-  float: left;
-  position: relative;
-  display: inline;
-  background-size: 100%;
-  height: 33.3333333%;
-  width:  33.3333333%;
+.right-bottom {
   border-right: 5px solid black;
   border-bottom: 5px solid black;
 }
 
-#five {
-  float: left;
-  position: relative;
-  display: inline;
-  background-size: 100%;
-  height: 33.3333333%;
-  width:  33.3333333%;
+.bottom {
   border-bottom: 5px solid black;
 }
 
-#six {
-  float: left;
-  position: relative;
-  display: inline;
-  background-size: 100%;
-  height: 33.3333333%;
-  width:  33.3333333%;
-  border-left: 5px solid black;
-  border-bottom: 5px solid black;
-}
-
-#seven {
-  float: left;
-  position: relative;
-  display: inline;
-  background-size: 100%;
-  height: 33.3333333%;
-  width:  33.3333333%;
+.right {
   border-right: 5px solid black;
-}
-
-#eight {
-  float: left;
-  position: relative;
-  display: inline;
-  background-size: 100%;
-  height: 33.3333333%;
-  width:  33.3333333%;
-  }
-
-#nine {
-  float: left;
-  position: relative;
-  display: inline;
-  background-size: 100%;
-  height: 33.3333333%;
-  width:  33.3333333%;
-  border-left: 5px solid black;
 }
 
 .red {

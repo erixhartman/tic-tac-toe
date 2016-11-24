@@ -39,16 +39,16 @@ $(function(){
   }
 
   var moves = 0;
-  $('.board div').on('click', function() {
+  $('.tile').on('click', function() {
     if (moves % 2 === 1 && (!$(this).hasClass('red')) && (!$(this).hasClass('blue'))) {
     moves++;
     console.log(moves);
-    $(this).attr('class', 'red');
+    $(this).addClass('red');
     check()
   } else if (moves % 2 === 0 && (!$(this).hasClass('red')) && (!$(this).hasClass('blue'))) {
     moves++;
     console.log(moves);
-    $(this).attr('class', 'blue');
+    $(this).addClass('blue');
     check()
   }
   });
