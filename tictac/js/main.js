@@ -1,6 +1,6 @@
 $(function(){
 
-function check(){
+ function check(){
     if ($('#one').hasClass("red") && $('#two').hasClass("red") && $('#three').hasClass("red")) {
       alert("Kurt Wins");
     } else if ($('#four').hasClass("red") && $('#five').hasClass("red") && $('#six').hasClass("red")) {
@@ -33,22 +33,27 @@ function check(){
       alert("Kermit Wins");
     } else if ($('#three').hasClass("blue") && $('#five').hasClass("blue") && $('#seven').hasClass("blue")) {
       alert("Kermit Wins");
+    } else if (($('.red').length + $('.blue').length) === 9) {
+      alert("Tie Game!");
     }
   }
 
   var moves = 0;
   $('.board div').on('click', function() {
-    console.log(moves);
     if (moves % 2 === 1 && (!$(this).hasClass('red')) && (!$(this).hasClass('blue'))) {
     moves++;
+    console.log(moves);
     $(this).attr('class', 'red');
     check()
   } else if (moves % 2 === 0 && (!$(this).hasClass('red')) && (!$(this).hasClass('blue'))) {
     moves++;
+    console.log(moves);
     $(this).attr('class', 'blue');
     check()
   }
   });
+
+
 
   $('button').on('click', function() {
     moves = 0
