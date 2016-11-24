@@ -15,7 +15,7 @@ function check(){
       alert("Red Wins");
     } else if ($('#one').hasClass("red") && $('#five').hasClass("red") && $('#nine').hasClass("red")) {
       alert("Red Wins");
-    } else if ($('#three').hasClass("red") && $('#six').hasClass("red") && $('#seven').hasClass("red")) {
+    } else if ($('#three').hasClass("red") && $('#five').hasClass("red") && $('#seven').hasClass("red")) {
       alert("Red Wins");
     } else if ($('#one').hasClass("blue") && $('#two').hasClass("blue") && $('#three').hasClass("blue")) {
       alert("Blue Wins");
@@ -31,7 +31,7 @@ function check(){
       alert("Blue Wins");
     } else if ($('#one').hasClass("blue") && $('#five').hasClass("blue") && $('#nine').hasClass("blue")) {
       alert("Blue Wins");
-    } else if ($('#three').hasClass("blue") && $('#six').hasClass("blue") && $('#seven').hasClass("blue")) {
+    } else if ($('#three').hasClass("blue") && $('#five').hasClass("blue") && $('#seven').hasClass("blue")) {
       alert("Blue Wins");
     }
   }
