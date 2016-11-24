@@ -1,59 +1,22 @@
 $(function(){
 
- function check(){
-    if ($('#one').hasClass("red") && $('#two').hasClass("red") && $('#three').hasClass("red")) {
+var winConditions = [['#one', '#two', '#three'], ['#four', '#five', '#six'], ['#seven', '#eight', '#nine'],
+ ['#one', '#four', '#seven'], ['#two', '#five', '#eight'], ['#three', '#six', '#nine'],
+ ['#one', '#five', '#nine'], ['#three', '#five', '#seven'], ]
+
+function check() {
+  for (var i = 0; i < winConditions.length; i++) {
+    if ($(winConditions[i][0]).hasClass('red') && $(winConditions[i][1]).hasClass('red') && $(winConditions[i][2]).hasClass('red')) {
       alert("Kurt Wins");
       $('.board div').removeClass('avail')
-    } else if ($('#four').hasClass("red") && $('#five').hasClass("red") && $('#six').hasClass("red")) {
-      alert("Kurt Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#seven').hasClass("red") && $('#eight').hasClass("red") && $('#nine').hasClass("red")) {
-      alert("Kurt Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#one').hasClass("red") && $('#four').hasClass("red") && $('#seven').hasClass("red")) {
-      alert("Kurt Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#two').hasClass("red") && $('#five').hasClass("red") && $('#eight').hasClass("red")) {
-      alert("Kurt Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#three').hasClass("red") && $('#six').hasClass("red") && $('#nine').hasClass("red")) {
-      alert("Kurt Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#one').hasClass("red") && $('#five').hasClass("red") && $('#nine').hasClass("red")) {
-      alert("Kurt Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#three').hasClass("red") && $('#five').hasClass("red") && $('#seven').hasClass("red")) {
-      alert("Kurt Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#one').hasClass("blue") && $('#two').hasClass("blue") && $('#three').hasClass("blue")) {
-      alert("Kermit Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#four').hasClass("blue") && $('#five').hasClass("blue") && $('#six').hasClass("blue")) {
-      alert("Kermit Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#seven').hasClass("blue") && $('#eight').hasClass("blue") && $('#nine').hasClass("blue")) {
-      alert("Kermit Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#one').hasClass("blue") && $('#four').hasClass("blue") && $('#seven').hasClass("blue")) {
-      alert("Kermit Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#two').hasClass("blue") && $('#five').hasClass("blue") && $('#eight').hasClass("blue")) {
-      alert("Kermit Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#three').hasClass("blue") && $('#six').hasClass("blue") && $('#nine').hasClass("blue")) {
-      alert("Kermit Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#one').hasClass("blue") && $('#five').hasClass("blue") && $('#nine').hasClass("blue")) {
-      alert("Kermit Wins");
-      $('.board div').removeClass('avail')
-    } else if ($('#three').hasClass("blue") && $('#five').hasClass("blue") && $('#seven').hasClass("blue")) {
-      alert("Kermit Wins");
-      $('.board div').removeClass('avail')
+    } else if ($(winConditions[i][0]).hasClass('blue') && $(winConditions[i][1]).hasClass('blue') && $(winConditions[i][2]).hasClass('blue')) {
+        alert("Kermit Wins");
+        $('.board div').removeClass('avail')
     } else if (($('.red').length + $('.blue').length) === 9) {
       alert("Tie Game!");
-      $('.board div').removeClass('avail')
     }
   }
+}
 
   var moves = 0;
   $('.tile').on('click', function() {
@@ -70,14 +33,11 @@ $(function(){
   }
   });
 
-
-
   $('button').on('click', function() {
     moves = 0
     $('.board div').removeClass('red')
     $('.board div').removeClass('blue')
     $('.board div').addClass('avail')
-
   })
 
 });
