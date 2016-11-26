@@ -22,7 +22,7 @@ function check() {
 }
 
   var moves = 0;
-  $('.tile').on('click touchstart', function() {
+  $('.tile').on("click touchstart", function() {
     if (moves % 2 === 1 && (!$(this).hasClass('red')) && (!$(this).hasClass('blue')) && ($(this).hasClass('avail'))) {
     moves++;
     console.log(moves);
@@ -36,7 +36,7 @@ function check() {
   }
   });
 
-  $('button').on('click touchstart', function() {
+  $('button').on("click touchstart", function() {
     moves = 0
     $('.board div').removeClass('red')
     $('.board div').removeClass('blue')
